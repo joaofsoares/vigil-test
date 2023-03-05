@@ -54,15 +54,3 @@ object Main extends App {
   // spark stop
   sparkSession.stop
 }
-
-// SQL Section
-
-// create view named odd_numbers
-// cachedOddNumbers.createTempView("odd_numbers")
-
-// select rows with odd number of values
-// sparkSession.sql("select id, value, count(value) " +
-//  "from odd_numbers " +
-//  "group by id, value " +
-//  "having count(value) % 2 <> 0 " +
-//  "order by id").show()
