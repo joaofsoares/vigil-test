@@ -91,7 +91,7 @@ class FileHandler(val sparkSession: SparkSession) {
    * @param tsv - tsv dataframe
    * @return
    */
-  def filesUnion(csv: sql.DataFrame, tsv: sql.DataFrame): Dataset[OddNumber] = {
+  private def filesUnion(csv: sql.DataFrame, tsv: sql.DataFrame): Dataset[OddNumber] = {
     import sparkSession.implicits._
 
     val union = if (csv.isEmpty && tsv.isEmpty) {

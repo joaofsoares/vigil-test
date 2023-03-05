@@ -66,6 +66,3 @@ object Main extends App {
 //  "group by id, value " +
 //  "having count(value) % 2 <> 0 " +
 //  "order by id").show()
-
-// TODO
-// create readme
